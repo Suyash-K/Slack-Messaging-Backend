@@ -52,7 +52,7 @@ export const signInService = async (data) => {
         statusCode: StatusCodes.BAD_REQUEST
       });
     }
-
+    
     return {
       username: user.username,
       avatar: user.avatar,
