@@ -16,7 +16,7 @@ app.get('/ping', (req, res) => {
   res.status(StatusCodes.OK).json({ message: 'pong' });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, async() => {
   console.log('Server is running on port 3000');
   connectDB();
 });
